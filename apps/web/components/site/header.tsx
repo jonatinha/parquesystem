@@ -19,7 +19,7 @@ import {
 const navigation = [
 {
     label: "Início",
-    href: "#parque",
+    href: "#inicio",
 },
   {
     label: "O Parque",
@@ -46,13 +46,13 @@ const navigation = [
 export function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <div className="mx-auto w-full px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full px-4 py-6 sm:px-8 lg:px-8">
 
         <nav style={{
             background:
             "linear-gradient(to right, rgba(255,255,255,0.0) 5%, rgba(255,255,255,0.90) 15%, rgba(255,255,255,0.90) 85%, rgba(0,0,0,0.0) 98%)",
         }}
-        className="relative flex h-16 items-center px-4   md:h-[58px] md:px-10 ">
+        className="relative flex h-20 items-center px-8   md:h-[75px] md:px-15 ">
 
           {/* =====================================================
               LOGO
@@ -91,19 +91,19 @@ export function Header() {
               DESKTOP NAVIGATION
           ====================================================== */}
 
-          <div className="ml-28 hidden flex-1 items-center justify-center gap-6 lg:ml-40 lg:flex">
+          <div className="ml-28 hidden flex-1 items-center justify-center gap-8 lg:ml-40 lg:flex">
             {navigation.map((item) => (
               <Link
-                key={item.href}
-                href={item.href}
-                className="
-                  whitespace-nowrap
-                  text-sm
-                  font-semibold
-                  text-crystal-ink
-                  transition-colors
-                  hover:text-crystal-blue
-                "
+                  key={item.href}
+                  href={item.href}
+                  className="
+                       whitespace-nowrap
+                       text-base
+                       font-semibold
+                       text-crystal-ink
+                       transition-colors
+                       hover:text-crystal-blue
+                      "
               >
                 {item.label}
               </Link>
@@ -116,21 +116,23 @@ export function Header() {
 
           <div className="ml-auto hidden lg:flex">
             <Button
-              className="
-                rounded-full
-                bg-crystal-yellow
-                px-6
-                font-bold
-                text-crystal-ink
-                shadow-md
-                transition-all
-                hover:bg-crystal-orange
-                hover:text-white
-                hover:shadow-lg
-              "
+                className="
+                  h-12
+                  rounded-full
+                  bg-crystal-yellow
+                  px-8
+                  text-base
+                  font-bold
+                  text-crystal-ink
+                  shadow-md
+                  transition-all
+                  hover:bg-crystal-orange
+                  hover:text-white
+                  hover:shadow-lg
+                "
             >
-              Reserve agora
-              <CalendarCheck2 className="ml-1 size-4"/>
+                Reserve agora
+                <CalendarCheck2 className="ml-1 size-5" />
             </Button>
           </div>
 

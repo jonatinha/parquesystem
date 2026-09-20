@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-// fontes a serem importadas
 import { Geist, Geist_Mono, Fredoka } from "next/font/google";
 
 const geistSans = Geist({
@@ -29,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${fredoka.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
