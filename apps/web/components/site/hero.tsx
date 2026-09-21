@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative h-dvh min-h-[600px] w-full overflow-hidden">
+    <section className="relative h-dvh min-h-[200px] w-full overflow-hidden">
       <Image
         src="/images/hero/parque-bg.webp"
         alt="Crystal Acqua Park"
