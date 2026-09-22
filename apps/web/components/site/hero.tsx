@@ -51,7 +51,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* ONDA + FAIXA DE ÍCONES — fixados na base do Hero */}
+      {/* ONDA + FAIXA DE ÍCONES - fixados na base do Hero página */}
       <div className="absolute inset-x-0 bottom-0 z-20">
         <svg
             viewBox="0 0 1440 100"
@@ -60,7 +60,7 @@ export function Hero() {
           >
             <path
               fill="white"
-              d="M0,40L80,45C160,50,320,60,480,58C640,56,800,42,960,38C1120,34,1280,40,1360,43L1440,46L1440,100L0,100Z"
+              d="M0,40L80,45C160,50,320,60,480,58C640,56,800,4cd 2,960,38C1120,34,1280,40,1360,43L1440,46L1440,100L0,100Z"
             />
         </svg>
 
