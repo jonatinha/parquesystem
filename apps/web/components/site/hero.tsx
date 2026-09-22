@@ -54,14 +54,14 @@ export function Hero() {
       {/* ONDA + FAIXA DE ÍCONES - fixados na base do Hero página */}
       <div className="absolute inset-x-0 bottom-0 z-20">
         <svg
-            viewBox="0 0 1440 100"
-            className="w-full h-[50px] md:h-[70px] block"
-            preserveAspectRatio="none"
-          >
-            <path
-              fill="white"
-              d="M0,40L80,45C160,50,320,60,480,58C640,56,800,4cd 2,960,38C1120,34,1280,40,1360,43L1440,46L1440,100L0,100Z"
-            />
+          viewBox="0 0 1440 100"
+          className="w-full h-[70px] md:h-[100px] block"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="white"
+            d="M0,55L80,58C160,62,320,68,480,66C640,64,800,52,960,48C1120,44,1280,50,1360,53L1440,56L1440,100L0,100Z"
+          />
         </svg>
 
         <div className="bg-white pt-0 pb-8 md:pt-3 md:pb-8 -mt-1">
