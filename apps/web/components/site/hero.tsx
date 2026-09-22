@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { ArrowRight, Droplets, Sun, Heart, Leaf } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -64,13 +65,24 @@ export function Hero() {
           h-full
           flex-col
           items-start
-          justify-center
+          justify-start
           px-5
+          pt-28
           pb-36
+
           sm:px-8
+          sm:pt-28
           sm:pb-32
+
           md:px-16
-          md:pb-24
+          md:pt-28
+          md:pb-28
+
+          lg:pt-28
+
+          xl:justify-center
+          xl:pt-0
+          xl:pb-28
         "
       >
         {/* TÍTULO */}
@@ -81,18 +93,17 @@ export function Hero() {
           height={998}
           priority
           className="
-            -mt-10
-            w-[200px]
             h-auto
+            w-[200px]
             -rotate-6
 
-            sm:-mt-16
             sm:w-[300px]
 
-            md:-mt-24
-            md:w-[420px]
+            md:w-[380px]
 
-            lg:w-[480px]
+            lg:w-[410px]
+
+            xl:w-[480px]
           "
         />
 
@@ -114,7 +125,9 @@ export function Hero() {
             md:ml-[90px]
             md:mt-4
             md:max-w-none
-            md:text-xl
+            md:text-lg
+
+            lg:text-xl
           "
         >
           Diversão, lazer e natureza
@@ -134,8 +147,10 @@ export function Hero() {
             sm:ml-10
             sm:flex-row
 
-            md:mt-8
+            md:mt-7
             md:ml-[90px]
+
+            lg:mt-6
           "
         >
           <Button
@@ -202,7 +217,11 @@ export function Hero() {
 
             sm:h-[70px]
 
-            md:h-[100px]
+            md:h-[90px]
+
+            lg:h-[90px]
+
+            xl:h-[100px]
           "
           preserveAspectRatio="none"
         >
@@ -225,8 +244,10 @@ export function Hero() {
             sm:pb-6
 
             md:px-8
-            md:pb-8
-            md:pt-3
+            md:pb-7
+            md:pt-2
+
+            lg:pb-6
           "
         >
           <div
@@ -261,8 +282,11 @@ export function Hero() {
                   className={`
                     size-6
                     shrink-0
+
                     sm:size-7
+
                     md:size-8
+
                     ${item.color}
                   `}
                 />
