@@ -208,6 +208,16 @@ export function Hero() {
         </div>
       </div>
 
+      {/* PLACA DE MADEIRA */}
+<div className="hero-sign">
+  <Image
+    src="/images/hero/placa-madeira.webp"
+    alt="Piscinas, Toboáguas, Lazer, Gastronomia, Família"
+    width={1306}
+    height={1167}
+  />
+</div>
+     
       {/* ONDA + FAIXA DE ÍCONES */}
       <div className="absolute inset-x-0 bottom-0 z-20">
         {/* ONDA */}
