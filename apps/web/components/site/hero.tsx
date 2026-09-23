@@ -36,9 +36,10 @@ export function Hero() {
     <section
       id="inicio"
       className="
+        hero-section
         relative
         h-dvh
-        min-h-[600px]
+        min-h-0
         w-full
         overflow-hidden
       "
@@ -59,6 +60,7 @@ export function Hero() {
       {/* CONTEÚDO PRINCIPAL */}
       <div
         className="
+          hero-content
           relative
           z-10
           flex
@@ -93,6 +95,7 @@ export function Hero() {
           height={998}
           priority
           className="
+            hero-title
             h-auto
             w-[200px]
             -rotate-6
